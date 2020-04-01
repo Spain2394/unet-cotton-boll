@@ -1,5 +1,5 @@
 
-##Credits
+## Credits
 
 Original paper: Olaf Ronneberger, Philipp Fischer, Thomas Brox: [https://arxiv.org/abs/1505.04597](https://arxiv.org/abs/1505.04597)
 
@@ -81,7 +81,7 @@ You can visualize in real time the train and test losses, along with the model p
 
 `tensorboard --logdir=runs`
 
-## Notes on memory
+## Hardware Notes
 Trained for 30 Epochs
 69 images in the training set
 Trained on 1x V100 GPU, with 16GB CPU memory 

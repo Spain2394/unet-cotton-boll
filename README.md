@@ -1,11 +1,11 @@
 
+# Cotton Boll segmentation with UNET
+
 ## Credits
 
 Original paper: Olaf Ronneberger, Philipp Fischer, Thomas Brox: [https://arxiv.org/abs/1505.04597](https://arxiv.org/abs/1505.04597)
 
 Github model: https://github.com/milesial/Pytorch-UNet
-
-# UNet: cotton boll segmentation with PyTorch for drone imagery
 
 ## Usage
 **Note : Use Python 3**

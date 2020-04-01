@@ -1,0 +1,2 @@
+usage: train.py [-h] [-e E] [-b [B]] [-l [LR]] [-f LOAD] [-s SCALE] [-v VAL]
+train.py: error: argument -e/--epochs: invalid int value: 'pochs'

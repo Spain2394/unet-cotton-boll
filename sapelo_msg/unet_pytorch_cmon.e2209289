@@ -1,0 +1,39 @@
+INFO: Using device {device}
+INFO: Network:
+	{net.n_channels} input channels
+	{net.n_classes} output channels (classes)
+	{"Bilinear" if net.bilinear else "Dilated conv"} upscaling
+INFO: Creating dataset with {len(self.ids)} examples
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {lr}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_cp}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+    
+Epoch {epoch + 1}/{epochs}:   0%|          | 0/52 [00:00<?, ?img/s]Epoch {epoch + 1}/{epochs}:   0%|          | 0/52 [00:02<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 172, in <module>
+    val_percent=args.val / 100)
+  File "train.py", line 77, in train_net
+    masks_pred = net(imgs)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch/avs81684/pytorch_unet_cmon/unet/unet_model.py", line 27, in forward
+    x1 = self.inc(x)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch/avs81684/pytorch_unet_cmon/unet/unet_parts.py", line 23, in forward
+    return self.double_conv(x)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/batchnorm.py", line 98, in forward
+    self.num_batches_tracked = self.num_batches_tracked + 1
+RuntimeError: CUDA error: no kernel image is available for execution on the device

@@ -1,0 +1,85 @@
+
+The following have been reloaded with a version change:
+  1) GCCcore/6.4.0 => GCCcore/8.3.0
+  2) GMP/6.1.2-GCCcore-6.4.0 => GMP/6.1.2-GCCcore-8.3.0
+  3) Python/3.7.0-foss-2018a => Python/3.7.4-GCCcore-8.3.0
+  4) SQLite/3.21.0-GCCcore-6.4.0 => SQLite/3.29.0-GCCcore-8.3.0
+  5) Tcl/8.6.8-GCCcore-6.4.0 => Tcl/8.6.9-GCCcore-8.3.0
+  6) XZ/5.2.3-GCCcore-6.4.0 => XZ/5.2.4-GCCcore-8.3.0
+  7) binutils/2.28-GCCcore-6.4.0 => binutils/2.32-GCCcore-8.3.0
+  8) bzip2/1.0.6-GCCcore-6.4.0 => bzip2/1.0.8-GCCcore-8.3.0
+  9) libffi/3.2.1-GCCcore-6.4.0 => libffi/3.2.1-GCCcore-8.3.0
+ 10) libreadline/7.0-GCCcore-6.4.0 => libreadline/8.0-GCCcore-8.3.0
+ 11) ncurses/6.0-GCCcore-6.4.0 => ncurses/6.1-GCCcore-8.3.0
+ 12) zlib/1.2.11-GCCcore-6.4.0 => zlib/1.2.11-GCCcore-8.3.0
+
+
+The following have been reloaded with a version change:
+  1) CUDA/10.1.243 => CUDA/9.2.88-GCC-7.3.0-2.30
+  2) GCCcore/8.3.0 => GCCcore/7.3.0
+  3) GMP/6.1.2-GCCcore-8.3.0 => GMP/6.1.2-GCCcore-7.3.0
+  4) Python/3.7.4-GCCcore-8.3.0 => Python/3.6.6-fosscuda-2018b
+  5) SQLite/3.29.0-GCCcore-8.3.0 => SQLite/3.24.0-GCCcore-7.3.0
+  6) Tcl/8.6.9-GCCcore-8.3.0 => Tcl/8.6.8-GCCcore-7.3.0
+  7) XZ/5.2.4-GCCcore-8.3.0 => XZ/5.2.4-GCCcore-7.3.0
+  8) binutils/2.32-GCCcore-8.3.0 => binutils/2.30-GCCcore-7.3.0
+  9) bzip2/1.0.8-GCCcore-8.3.0 => bzip2/1.0.6-GCCcore-7.3.0
+ 10) libffi/3.2.1-GCCcore-8.3.0 => libffi/3.2.1-GCCcore-7.3.0
+ 11) libreadline/8.0-GCCcore-8.3.0 => libreadline/7.0-GCCcore-7.3.0
+ 12) ncurses/6.1-GCCcore-8.3.0 => ncurses/6.1-GCCcore-7.3.0
+ 13) zlib/1.2.11-GCCcore-8.3.0 => zlib/1.2.11-GCCcore-7.3.0
+
+INFO: Using device {device}
+INFO: Network:
+	{net.n_channels} input channels
+	{net.n_classes} output channels (classes)
+	{"Bilinear" if net.bilinear else "Dilated conv"} upscaling
+INFO: Creating dataset with {len(self.ids)} examples
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {lr}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_cp}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+    
+Epoch {epoch + 1}/{epochs}:   0%|          | 0/52 [00:00<?, ?img/s]Epoch {epoch + 1}/{epochs}:   0%|          | 0/52 [00:01<?, ?img/s, loss (batch)=0.694]Epoch {epoch + 1}/{epochs}:   2%|1         | 1/52 [00:02<01:45,  2.07s/img, loss (batch)=0.694]Epoch {epoch + 1}/{epochs}:   2%|1         | 1/52 [00:02<01:45,  2.07s/img, loss (batch)=0.251]Epoch {epoch + 1}/{epochs}:   4%|3         | 2/52 [00:03<01:28,  1.76s/img, loss (batch)=0.251]Epoch {epoch + 1}/{epochs}:   4%|3         | 2/52 [00:03<01:28,  1.76s/img, loss (batch)=1.4]  Epoch {epoch + 1}/{epochs}:   6%|5         | 3/52 [00:03<01:07,  1.38s/img, loss (batch)=1.4]Epoch {epoch + 1}/{epochs}:   6%|5         | 3/52 [00:04<01:07,  1.38s/img, loss (batch)=0.276]Epoch {epoch + 1}/{epochs}:   8%|7         | 4/52 [00:04<00:57,  1.21s/img, loss (batch)=0.276]Epoch {epoch + 1}/{epochs}:   8%|7         | 4/52 [00:05<00:57,  1.21s/img, loss (batch)=0.096]Epoch {epoch + 1}/{epochs}:  10%|9         | 5/52 [00:05<00:50,  1.08s/img, loss (batch)=0.096]Epoch {epoch + 1}/{epochs}:  10%|9         | 5/52 [00:05<00:50,  1.08s/img, loss (batch)=0.0769]Epoch {epoch + 1}/{epochs}:  12%|#1        | 6/52 [00:05<00:46,  1.00s/img, loss (batch)=0.0769]
+Validation round:   0%|          | 0/13 [00:00<?, ?img/s][A
+Validation round:   8%|7         | 1/13 [00:01<00:12,  1.06s/img][A
+                                                                 [AEpoch {epoch + 1}/{epochs}:  12%|#1        | 6/52 [00:07<00:56,  1.23s/img, loss (batch)=0.0769]
+Traceback (most recent call last):
+  File "train.py", line 172, in <module>
+    val_percent=args.val / 100)
+  File "train.py", line 91, in train_net
+    val_score = eval_net(net, val_loader, device, n_val)
+  File "/scratch/avs81684/pytorch_unet_cmon/eval.py", line 22, in eval_net
+    mask_pred = net(imgs)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch/avs81684/pytorch_unet_cmon/unet/unet_model.py", line 28, in forward
+    x2 = self.down1(x1)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch/avs81684/pytorch_unet_cmon/unet/unet_parts.py", line 37, in forward
+    return self.maxpool_conv(x)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch/avs81684/pytorch_unet_cmon/unet/unet_parts.py", line 23, in forward
+    return self.double_conv(x)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 345, in forward
+    return self.conv2d_forward(input, self.weight)
+  File "/usr/local/apps/gb/torchvision/0.5.0-fosscuda-2018b-Python-3.6.6/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 342, in conv2d_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: CUDA out of memory. Tried to allocate 300.00 MiB (GPU 0; 15.75 GiB total capacity; 13.92 GiB already allocated; 75.62 MiB free; 14.62 GiB reserved in total by PyTorch)

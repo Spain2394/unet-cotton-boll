@@ -11,6 +11,8 @@ from torchvision import transforms
 from unet import UNet
 from utils.data_vis import plot_img_and_mask
 from utils.dataset import BasicDataset
+import sys
+
 
 
 def predict_img(net,
@@ -107,7 +109,9 @@ if __name__ == "__main__":
     logging.info("Loading model {}".format(args.model))
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    logging.info(f'Using device {device}')
+    # print(device)
+    # sys.exit(0)
+    logging.info('Using device {device}')
     net.to(device=device)
     net.load_state_dict(torch.load(args.model, map_location=device))
 

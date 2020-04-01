@@ -1,0 +1,33 @@
+
+The following have been reloaded with a version change:
+  1) GCCcore/6.4.0 => GCCcore/8.3.0
+  2) GMP/6.1.2-GCCcore-6.4.0 => GMP/6.1.2-GCCcore-8.3.0
+  3) Python/3.7.0-foss-2018a => Python/3.7.4-GCCcore-8.3.0
+  4) SQLite/3.21.0-GCCcore-6.4.0 => SQLite/3.29.0-GCCcore-8.3.0
+  5) Tcl/8.6.8-GCCcore-6.4.0 => Tcl/8.6.9-GCCcore-8.3.0
+  6) XZ/5.2.3-GCCcore-6.4.0 => XZ/5.2.4-GCCcore-8.3.0
+  7) binutils/2.28-GCCcore-6.4.0 => binutils/2.32-GCCcore-8.3.0
+  8) bzip2/1.0.6-GCCcore-6.4.0 => bzip2/1.0.8-GCCcore-8.3.0
+  9) libffi/3.2.1-GCCcore-6.4.0 => libffi/3.2.1-GCCcore-8.3.0
+ 10) libreadline/7.0-GCCcore-6.4.0 => libreadline/8.0-GCCcore-8.3.0
+ 11) ncurses/6.0-GCCcore-6.4.0 => ncurses/6.1-GCCcore-8.3.0
+ 12) zlib/1.2.11-GCCcore-6.4.0 => zlib/1.2.11-GCCcore-8.3.0
+
+
+The following have been reloaded with a version change:
+  1) CUDA/10.1.243 => CUDA/9.2.88-GCC-7.3.0-2.30
+  2) GCCcore/8.3.0 => GCCcore/7.3.0
+  3) GMP/6.1.2-GCCcore-8.3.0 => GMP/6.1.2-GCCcore-7.3.0
+  4) Python/3.7.4-GCCcore-8.3.0 => Python/3.6.6-fosscuda-2018b
+  5) SQLite/3.29.0-GCCcore-8.3.0 => SQLite/3.24.0-GCCcore-7.3.0
+  6) Tcl/8.6.9-GCCcore-8.3.0 => Tcl/8.6.8-GCCcore-7.3.0
+  7) XZ/5.2.4-GCCcore-8.3.0 => XZ/5.2.4-GCCcore-7.3.0
+  8) binutils/2.32-GCCcore-8.3.0 => binutils/2.30-GCCcore-7.3.0
+  9) bzip2/1.0.8-GCCcore-8.3.0 => bzip2/1.0.6-GCCcore-7.3.0
+ 10) libffi/3.2.1-GCCcore-8.3.0 => libffi/3.2.1-GCCcore-7.3.0
+ 11) libreadline/8.0-GCCcore-8.3.0 => libreadline/7.0-GCCcore-7.3.0
+ 12) ncurses/6.1-GCCcore-8.3.0 => ncurses/6.1-GCCcore-7.3.0
+ 13) zlib/1.2.11-GCCcore-8.3.0 => zlib/1.2.11-GCCcore-7.3.0
+
+usage: train.py [-h] [-e E] [-b [B]] [-l [LR]] [-f LOAD] [-s SCALE] [-v VAL]
+train.py: error: argument -s/--scale: expected one argument

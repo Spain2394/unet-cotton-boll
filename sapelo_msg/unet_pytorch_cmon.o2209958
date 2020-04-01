@@ -1,0 +1,4 @@
+Job ID: 2209958.sapelo2
+Queue:  gpu_q
+Cores:  2
+Nodes:  gn48.icompute 
